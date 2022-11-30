@@ -1,0 +1,68 @@
+import { img10, img11, img12, img13, img9 } from "../../assets/images";
+
+export const blogData = [
+  {
+    id: 1,
+    image: img9,
+    badge: "Business",
+    date: "24 Jan, 2021",
+    title: "Plan Your Project in 2022",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.",
+  },
+  {
+    id: 2,
+    image: img10,
+    badge: "Analytics",
+    date: "24 Jan, 2021",
+    title: "The Next Big Challenge for Content Marketer",
+    text: "Aenean tempus orci eu est ultrices hendrerit. Fusce suscipit, leo a semper venenatis, felis urna pulvinar nibh, vitae porta erat risus sed mauris. Vestibulum vehicula leo eget libero eleifend.",
+  },
+  {
+    id: 3,
+    image: img11,
+    badge: "Company",
+    date: "24 Jan, 2021",
+    title: "How to Make Website WCAG Compliant?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.",
+  },
+  {
+    id: 4,
+    image: img12,
+    badge: "Target",
+    date: "24 Jan, 2021",
+    title: "The Future of Enterprise API Development",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.",
+  },
+  {
+    id: 5,
+    image: img13,
+    badge: "Layers",
+    date: "24 Jan, 2021",
+    title: "How To Make Your iOS 13 Compatible?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.",
+  },
+  {
+    id: 6,
+    image: img11,
+    badge: "Business",
+    date: "24 Jan, 2021",
+    title: "Plan Your Project in 2022",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.",
+  },
+  {
+    id: 7,
+    image: img10,
+    badge: "Business",
+    date: "24 Jan, 2021",
+    title: "Plan Your Project with Your Software",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.",
+  },
+  {
+    id: 8,
+    image: img9,
+    badge: "Business",
+    date: "24 Jan, 2021",
+    title: "You have a Great Is Business Idea?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.",
+  },
+];
