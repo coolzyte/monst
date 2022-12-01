@@ -5,9 +5,7 @@ const Contact = () => {
   return (
     <>
       <ContactHero />
-      <section className="py-20">
-        <ContactForm />
-      </section>
+      <ContactForm />
       <section className="py-20 bg-blue-500">
         <Subscribe color="color" />
       </section>

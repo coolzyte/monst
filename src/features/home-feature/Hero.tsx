@@ -1,10 +1,17 @@
 import { BtnAccent, BtnPrimary } from "../../components";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
     <div className="container px-4 mx-auto">
       <div className="pt-12 text-center">
-        <div className="max-w-2xl mx-auto mb-8">
+        <div
+          className="max-w-2xl mx-auto mb-8"
+          data-aos="fade-zoom-in"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+        >
           <h2
             className="text-3xl lg:text-5xl lg:leading-normal mb-4 font-bold font-poppins"
             style={{ visibility: "visible" }}
@@ -18,25 +25,24 @@ const Hero = () => {
           >
             We are <strong className="text-blue-500">Monst</strong>, a Creative
             Design
-            <span className="typewrite d-inline text-brand">
+            <span className="inline ml-2">
               <span>
-                <div style={{ display: "inline-block" }}>Social Marketing</div>
-                <span
-                  style={{
-                    display: "inline-block",
-                    transition: "opacity 0.5s ease 0s",
-                    opacity: 1,
-                  }}
-                >
-                  |
-                </span>
+                <div style={{ display: "inline-block" }}>
+                  <Typewriter
+                    options={{
+                      strings: ["Social Marketing", "Web Agency"],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </div>
               </span>
             </span>
           </p>
         </div>
         <div className="space-x-2">
-          <BtnPrimary title="Key Features" path="/key-features" />
-          <BtnAccent title="How We Work?" path="/how-we-work" />
+          <BtnPrimary title="Key Features" path="#key-features" />
+          <BtnAccent title="How We Work?" path="#how-we-work" />
         </div>
       </div>
     </div>

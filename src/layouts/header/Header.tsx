@@ -1,13 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BtnAccent, BtnPrimary, Logo } from "../../components";
 import MobileMenu from "./MobileMenu";
 import Navbar from "./Navbar";
 
 const Header = () => {
   const [showLinks, setShowLinks] = useState(false);
+  const [topBarScroll, setTopBarScroll] = useState(false);
+
+  const animateTopBar = () => {
+    if (window.scrollY >= 100) {
+      setTopBarScroll(true);
+    } else {
+      setTopBarScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", animateTopBar);
+  }, []);
+
   return (
     <>
-      <header className="bg-transparent sticky-bar mt-4 z-10">
+      <header
+        className={
+          topBarScroll
+            ? `fixed top-0 w-full bg-white shadow-sm z-50 transition-all duration-300 ease-in-out mt-0`
+            : `bg-transparent mt-4 z-50`
+        }
+      >
         <div className="container mx-auto bg-transparent">
           <nav className="bg-transparent flex justify-between items-center py-3">
             <Logo />

@@ -1,7 +1,6 @@
 import { Badge, Breadcrumb, SectionHead } from "../components";
 import { GetInTouch } from "../features/get-in-touch";
 import { TeamExecutiveLists, TeamLists } from "../features/team-feature";
-import Layout from "../layouts";
 
 const Team = () => {
   return (
@@ -22,9 +21,7 @@ const Team = () => {
           <TeamExecutiveLists />
         </div>
       </section>
-      <section className="py-20">
-        <TeamLists />
-      </section>
+      <TeamLists />
       <GetInTouch />
     </>
   );

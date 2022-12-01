@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { BlogSingle } from "./features/blog-feature";
 import Layout from "./layouts";
+
 import {
   AboutUs,
   Blog,
@@ -16,6 +17,10 @@ import {
   Team,
   Testimonials,
 } from "./pages";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const router = createBrowserRouter([
   {
@@ -83,6 +88,10 @@ const router = createBrowserRouter([
 ]);
 
 const App: React.FC = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
       <RouterProvider router={router} />

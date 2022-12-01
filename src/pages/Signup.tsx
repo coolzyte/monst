@@ -42,12 +42,9 @@ const Signup = () => {
                   </button>
                 </div>
               </div>
-              <div
-                className="float-left mb-8 "
-                style={{ visibility: "visible" }}
-              >
+              <div className="float-left mb-8 ">
                 <label className="inline-flex text-xs">
-                  <input type="checkbox" className="form-checkbox" checked="" />
+                  <input type="checkbox" className="form-checkbox" />
                   <span className="ml-2">
                     I agree to{" "}
                     <a className="underline hover:text-gray-500" href="/about">
@@ -72,10 +69,8 @@ const Signup = () => {
                 <p className="text-sm">
                   Already have an account?{" "}
                   <a
-                    className="inline-block text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none wow animate__ animate__fadeIn  animated animated"
-                    data-wow-delay=".1s"
+                    className="inline-block text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none"
                     href="/login"
-                    style={{ visibility: "visible" }}
                   >
                     Sign in now
                   </a>

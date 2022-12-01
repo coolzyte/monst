@@ -3,7 +3,10 @@ import { whyUsList } from "./utils/data";
 
 const WhyChooseUs = () => {
   return (
-    <section className="pt-8 pb-12 md:py-16 lg:py-16 overflow-x-hidden">
+    <section
+      id="key-features"
+      className="pt-8 pb-12 md:py-16 lg:py-16 overflow-x-hidden"
+    >
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap lg:flex-nowrap">
           <div className="w-full lg:w-1/2">
@@ -31,8 +34,9 @@ const WhyChooseUs = () => {
                   <div
                     key={item.id}
                     className="flex items-start py-4 "
-                    data-wow-delay=".5s"
-                    style={{ visibility: "visible" }}
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
                   >
                     <div className="w-8 mr-5 text-blue-500 text-2xl">
                       {item.icon}
@@ -41,7 +45,7 @@ const WhyChooseUs = () => {
                       <h3 className="mb-2 text-xl font-semibold font-poppins">
                         {item.title}
                       </h3>
-                      <p className="text-gray leading-loose">{item.text}</p>
+                      <p className="leading-loose">{item.text}</p>
                     </div>
                   </div>
                 );
@@ -49,11 +53,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
           <div className="relative w-full lg:w-1/2 my-12 lg:my-0">
-            <div
-              className=""
-              data-wow-delay=".5s"
-              style={{ visibility: "visible" }}
-            >
+            <div className="">
               <img
                 className="jump relative mx-auto rounded-xl w-full z-10"
                 src={lady}

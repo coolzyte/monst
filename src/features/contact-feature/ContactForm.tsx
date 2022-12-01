@@ -2,7 +2,7 @@ import { Form, SectionHead } from "../../components";
 
 const ContactForm = () => {
   return (
-    <section className="pb-20">
+    <section className="py-20">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <div className="max-w-md mb-8 mx-auto">

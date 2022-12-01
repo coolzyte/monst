@@ -1,7 +1,7 @@
 type reportProps = {
   icon: JSX.Element;
   title: string;
-  number: string;
+  number: number;
 };
 
 const ReportList = ({ icon, title, number }: reportProps) => {

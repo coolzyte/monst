@@ -4,10 +4,14 @@ import HowWeWorkList from "./HowWeWorkList";
 
 const HowWeWork = () => {
   return (
-    <section className="py-20 bg-blue-50">
+    <section id="how-we-work" className="py-20 bg-blue-50">
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
-          <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
+          <div
+            className="w-full lg:w-1/2 mb-4 lg:mb-0"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             <SectionHead
               title="We are"
               blueTitle="awesome team"

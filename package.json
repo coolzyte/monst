@@ -12,11 +12,14 @@
     "@types/react-icons": "^3.0.0",
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.26",
+    "aos": "^2.3.4",
     "react": "^18.2.0",
+    "react-countup": "^6.4.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6",
     "styled-components": "^5.3.6",
-    "swiper": "^8.4.4"
+    "swiper": "^8.4.4",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",

@@ -9,19 +9,10 @@ const AboutUs = () => {
   return (
     <>
       <AboutHero />
-
-      <section className="pt-6 pb-2">
-        <ReportLists />
-      </section>
-      <section className="py-20 bg-blue-50">
-        <HowWeWork />
-      </section>
-      <section className="py-20">
-        <TeamLists />
-      </section>
-
+      <ReportLists />
+      <HowWeWork />
+      <TeamLists />
       <ContactForm />
-
       <section className="py-20 bg-blue-500">
         <Subscribe color="color" />
       </section>

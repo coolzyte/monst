@@ -10,19 +10,11 @@ const Services = () => {
   return (
     <>
       <Breadcrumb title="Our Services" page="Web Development" />
-      <section className="pt-12">
-        <ServicesHero />
-      </section>
+      <ServicesHero />
       <ReportLists />
-      <section className="py-20 bg-blue-50">
-        <HowWeWork />
-      </section>
-      <section className="pt-20 pb-16 xl:bg-contain bg-top bg-no-repeat">
-        <PriceLists />
-      </section>
-      <section className="pb-20">
-        <ContactForm />
-      </section>
+      <HowWeWork />
+      <PriceLists />
+      <ContactForm />
       <section className="py-20 bg-blue-500">
         <Subscribe color="color" />
       </section>
