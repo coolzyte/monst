@@ -1,5 +1,15 @@
 import { BtnAccent, BtnPrimary } from "../../components";
 
+type priceListProps = {
+  plan: string;
+  price: string;
+  domain: string;
+  email: string;
+  database: string;
+  storage: string;
+  image: string;
+  icon: JSX.Element;
+};
 const PriceList = ({
   plan,
   price,
@@ -9,7 +19,7 @@ const PriceList = ({
   storage,
   image,
   icon,
-}) => {
+}: priceListProps) => {
   return (
     <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6 last:w-full last:lg:w-1/3">
       <div

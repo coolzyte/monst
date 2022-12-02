@@ -3,7 +3,7 @@ import { BtnAccent, BtnPrimary, SectionHead } from "../../components";
 
 const PricingHero = () => {
   return (
-    <section className="relative -mt-24 pt-24 -z-10">
+    <section className="relative -mt-24 pt-24">
       <div
         className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blue-50 z-0"
         style={{ zIndex: -1 }}
@@ -40,9 +40,9 @@ const PricingHero = () => {
                 </p>
               </div>
               <div className="text-center lg:text-left space-x-2">
-                <BtnPrimary title="Our Services" path="/services" />
+                <BtnPrimary title="About Us" path="/about" />
 
-                <BtnAccent title="How We Work" path="/about#how-we-work" />
+                <BtnAccent title="Our Services" path="/services" />
               </div>
             </div>
           </div>
