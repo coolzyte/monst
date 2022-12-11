@@ -6,6 +6,7 @@ import Breadcrumb from "./Breadcrumb";
 import Badge from "./Badge";
 import Form from "./Form";
 import Brands from "./Brands";
+import SocialMediaIcon from "./SocialMediaIcon";
 
 export {
   Brands,
@@ -18,4 +19,5 @@ export {
   FormRow,
   Breadcrumb,
   Badge,
+  SocialMediaIcon,
 };

@@ -1,5 +1,4 @@
-import { facebook, instagram, twitter } from "../../assets/images";
-import { Logo } from "../../components";
+import { Logo, SocialMediaIcon } from "../../components";
 
 const Footer = () => {
   return (
@@ -38,17 +37,7 @@ const Footer = () => {
               Alithemes.com
             </a>
           </p>
-          <div className="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
-            <a className="inline-block px-2" href="https://facebook.com">
-              <img src={facebook} alt="Monst" />
-            </a>
-            <a className="inline-block px-2" href="https://twitter.com">
-              <img src={twitter} alt="Monst" />
-            </a>
-            <a className="inline-block px-2" href="https://www.instagram.com">
-              <img src={instagram} alt="Monst" />
-            </a>
-          </div>
+          <SocialMediaIcon />
         </div>
       </div>
     </section>

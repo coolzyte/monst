@@ -1,4 +1,5 @@
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { facebook, twitter } from "../../assets/images";
+
 import {
   avatar1,
   avatar2,
@@ -17,8 +18,16 @@ export const testimonialData = [
     name: "Geraldine Tusoy ",
     jobTitle: "CEO, Co Founders",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 2,
@@ -26,8 +35,16 @@ export const testimonialData = [
     name: "Clara Kolawole",
     jobTitle: "CEO-Founder",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 3,
@@ -35,8 +52,16 @@ export const testimonialData = [
     name: "Chris Fulton",
     jobTitle: "Project-Manager",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 4,
@@ -44,9 +69,16 @@ export const testimonialData = [
     name: "Dany Connolly",
     jobTitle: "Direct-Founder",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
-    twitter: <FaTwitter />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 5,
@@ -54,8 +86,16 @@ export const testimonialData = [
     name: "Al-amin Bishash",
     jobTitle: "Director",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 6,
@@ -63,8 +103,16 @@ export const testimonialData = [
     name: "Sanuya Santa",
     jobTitle: "Marketing",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 7,
@@ -72,8 +120,16 @@ export const testimonialData = [
     name: "Steven Job",
     jobTitle: "Designer",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 8,
@@ -81,7 +137,15 @@ export const testimonialData = [
     name: "Romario",
     jobTitle: "Designer",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
 ];

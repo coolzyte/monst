@@ -21,7 +21,7 @@ const Subscribe = ({ color }: subscribeProps) => {
           <span>and get the Coupon code.</span>
         </h2>
 
-        <p className="mb-8 text-white" style={{ visibility: "visible" }}>
+        <p className={`mb-8 ${color ? "text-white" : ""}`}>
           All your information is completely confidential
         </p>
         {color ? <BlueInput /> : <WhiteInput />}

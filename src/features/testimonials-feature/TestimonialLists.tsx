@@ -38,7 +38,7 @@ const TestimonialLists = () => {
         <div className="text-center pt-12">
           <BtnPrimary
             type="button"
-            title="Show more Testimonials"
+            title={`Show ${expanded ? "less" : "more"}  Testimonials`}
             onClick={handleClick}
           />
         </div>

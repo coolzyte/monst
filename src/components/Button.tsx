@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 const Wrapper = styled.a`
   margin-right: 0.5rem;
@@ -38,9 +39,9 @@ const WrapperBtnPrimary = styled(Wrapper)`
 `;
 
 type ButtonProps = {
-  title: string;
+  title: string | undefined;
   path?: string;
-  type?: string;
+  type?: "button" | "reset" | "submit" | undefined;
   image?: string;
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 };
@@ -86,15 +87,15 @@ export const BtnSubmit = ({ title }: ButtonProps) => {
   );
 };
 
-export const BtnSocial = ({ title, image, type }: ButtonProps) => {
+export const BtnSocial = ({ title, image, type, path }: ButtonProps) => {
   return (
-    <button
+    <Link
       className="transition duration-300 ease-in-out transform hover:-translate-y-1 flex items-center w-full px-4 py-3 mb-2 text-xs text-gray-500 font-semibold leading-none border border-gray-200 hover:bg-gray-50 rounded"
-      href="/"
+      to={path}
       type={type}
     >
       <img className="h-6 pr-10" src={image} />
       <span>{title}</span>
-    </button>
+    </Link>
   );
 };

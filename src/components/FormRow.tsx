@@ -2,7 +2,7 @@ type formRowProps = {
   type: string;
   name: string;
   placeholder?: string;
-  blue?: string;
+  blue?: string | undefined;
   value: string;
   handleChange: React.ChangeEventHandler<HTMLInputElement> | undefined;
 };

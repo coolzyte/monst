@@ -1,11 +1,15 @@
+import { SocialMediaIcon } from "../../components";
+import { teamData } from "./data";
+
 type teamExecutiveProps = {
-  image: string;
+  image?: string;
   name: string;
   jobTitle: string;
   text: string;
-  facebook: JSX.Element;
-  instagram: JSX.Element;
-  twitter: JSX.Element;
+  lists: {
+    url: string;
+    icon: string;
+  }[];
 };
 
 const TeamExecutiveList = ({
@@ -13,9 +17,7 @@ const TeamExecutiveList = ({
   name,
   jobTitle,
   text,
-  facebook,
-  instagram,
-  twitter,
+  lists,
 }: teamExecutiveProps) => {
   return (
     <div className="w-full md:w-1/2 py-5 md:px-5">
@@ -32,11 +34,11 @@ const TeamExecutiveList = ({
           </div>
         </div>
         <p className="leading-loose text-gray-400 mb-5">{text}</p>
-        <div className="flex space-x-2 text-blue-500">
-          <a href="#">{facebook}</a>
-          <a href="#">{instagram}</a>
-          <a href="#">{twitter}</a>
-        </div>
+        {lists.map((list, index) => (
+          <a key={index} className="inline-block px-2" href={list.url}>
+            <img src={list.icon} alt="Monst" />
+          </a>
+        ))}
       </div>
     </div>
   );

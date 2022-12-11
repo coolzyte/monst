@@ -3,9 +3,11 @@ type testimonialsProps = {
   name: string;
   jobTitle: string;
   text: string;
-  facebook: JSX.Element;
-  instagram: JSX.Element;
-  twitter: JSX.Element;
+
+  lists: {
+    url: string;
+    icon: string;
+  }[];
 };
 
 const TestimonialList = ({
@@ -13,8 +15,7 @@ const TestimonialList = ({
   name,
   jobTitle,
   text,
-  facebook,
-  instagram,
+  lists,
 }: testimonialsProps) => {
   return (
     <div className="w-full md:w-1/2 py-5 md:px-5">
@@ -32,8 +33,11 @@ const TestimonialList = ({
         </div>
         <p className="leading-loose mb-5">{text}</p>
         <div className="flex space-x-2 text-blue-500">
-          <a href="#">{facebook}</a>
-          <a href="#">{instagram}</a>
+          {lists.map((list, index) => (
+            <a key={index} className="inline-block px-2" href={list.url}>
+              <img src={list.icon} alt="Monst" />
+            </a>
+          ))}
         </div>
       </div>
     </div>

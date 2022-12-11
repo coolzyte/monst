@@ -2,9 +2,13 @@ type teamListProps = {
   image: string;
   name: string;
   jobTitle: string;
+  lists: {
+    url: string;
+    icon: string;
+  }[];
 };
 
-const TeamList = ({ image, name, jobTitle }: teamListProps) => {
+const TeamList = ({ image, name, jobTitle, lists }: teamListProps) => {
   return (
     <div className="w-1/2 lg:w-1/4 px-5 mb-12">
       <div
@@ -17,7 +21,12 @@ const TeamList = ({ image, name, jobTitle }: teamListProps) => {
           alt="Monst"
         />
         <strong className="mt-6 mb-2 text-md">{name}</strong>
-        <p className="text-gray-500 text-xs mt-3">{jobTitle}</p>
+        <p className="text-gray-500 text-xs my-3">{jobTitle}</p>
+        {lists.map((list, index) => (
+          <a key={index} className="inline-block px-2" href={list.url}>
+            <img src={list.icon} alt="Monst" />
+          </a>
+        ))}
       </div>
     </div>
   );

@@ -8,12 +8,7 @@ const DashboardImage = () => {
         className="absolute"
         style={{ top: "9%", left: "14%", width: "72%", height: "66%" }}
       >
-        <img
-          className="jump rounded wow animate__animated animate__fadeIn animated animated"
-          src={dashboard}
-          alt="Monst"
-          style={{ visibility: "visible" }}
-        />
+        <img src={dashboard} alt="Monst" style={{ visibility: "visible" }} />
       </div>
     </div>
   );

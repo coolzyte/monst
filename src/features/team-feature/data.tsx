@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { facebook, instagram, twitter } from "../../assets/images";
 import {
   avatar1,
   avatar2,
@@ -17,8 +17,20 @@ export const teamData = [
     name: "Geraldine Tusoy ",
     jobTitle: "CEO, Co Founders",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+      {
+        url: "https://www.instagram.com",
+        icon: instagram,
+      },
+    ],
   },
   {
     id: 2,
@@ -26,8 +38,16 @@ export const teamData = [
     name: "Clara Kolawole",
     jobTitle: "CEO-Founder",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://www.instagram.com",
+        icon: instagram,
+      },
+    ],
   },
   {
     id: 3,
@@ -35,8 +55,16 @@ export const teamData = [
     name: "Chris Fulton",
     jobTitle: "Project-Manager",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 4,
@@ -44,32 +72,83 @@ export const teamData = [
     name: "Dany Connolly",
     jobTitle: "Direct-Founder",
     text: "Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.",
-    facebook: <FaFacebook />,
-    instagram: <FaInstagram />,
-    twitter: <FaTwitter />,
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+      {
+        url: "https://www.instagram.com",
+        icon: instagram,
+      },
+    ],
   },
   {
     id: 5,
     image: avatar5,
     name: "Al-amin Bishash",
     jobTitle: "Director",
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 6,
     image: avatar6,
     name: "Sanuya Santa",
     jobTitle: "Marketing",
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 7,
     image: avatar7,
     name: "Steven Job",
     jobTitle: "Designer",
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
   {
     id: 8,
     image: avatar8,
     name: "Romario",
     jobTitle: "Designer",
+    lists: [
+      {
+        url: "https://facebook.com",
+        icon: facebook,
+      },
+      {
+        url: "https://twitter.com",
+        icon: twitter,
+      },
+    ],
   },
 ];

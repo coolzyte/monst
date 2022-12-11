@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 p {
-  color: rgba(148, 163, 184, 10) !important;
+  color: rgba(148, 163, 184, 10);
 }
 
 .container {
